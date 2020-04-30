@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Room Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>Room Booking</h1>
+        <form id="mainForm" action="https://example.com/book" method="POST">
+            <div id="formTop">
+                <label>Who</label>
+                <input name="whoInput" type="text" placeholder="enter your name" minlength="3" required> <br>
+                <label>What</label>
+                <input name="whatInput" type="text" placeholder="enter room name" minlength="3" required> <br>
+                <label>When</label>
+                <input name="whenInput" type="text" placeholder="date and time" minlength="3" required><br>
+                <label>Duration</label>
+                <input name="durationInpupt" type="text" placeholder="enter desired booking length" minlength="3"
+                    required>
+                <hr>
+            </div>
+
+            <div id="formBottom">
+                <label>Meeting Name</label>
+                <input name="meetingNameInput" type="text" placeholder="enter desired booking length" minlength="3"
+                    required> <br>
+                <label>Description</label>
+                <input name="descriptionInput" type="text" placeholder="(optional) add a description for your booking"
+                    minlength="3" maxlength="40">
+            </div>
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
