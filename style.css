@@ -1,5 +1,8 @@
+* {
+    font-family: 'Balsamiq Sans', 'Comic Sans MS', 'Segoe UI', Verdana, sans-serif;
+}
+
 body {
-    font-family: 'Balsamiq Sans', 'Segoe UI', Verdana, sans-serif;
     align-content: center;
     background-color: lightgrey;
 }
@@ -14,24 +17,35 @@ body {
 h1 {
     font-weight: 900;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 label {
     font-weight: bolder;
+    display: inline-block;
+    width: 30%;
+    text-align: right;
 }
 
 input {
     float: right;
     clear: right;
     border: 3px outset black;
-    font-size: 0.9em;
-    width: 60%;
-    padding: 0.1em;
+    font-size: 0.8em;
+    width: 65%;
+    padding: 0.3em;
 }
 
 input[type="submit"] {
-    padding: 1em;
+    font-weight: bolder;
+    font-size: 1em;
+    margin-top: .8em;
+    padding: 0.8em;
     border-radius: 10px;
     background-color: darkgrey;
     width: unset;
+}
+
+input[name="descriptionInput"] {
+    height: 100px;
 }
