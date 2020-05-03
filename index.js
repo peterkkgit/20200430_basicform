@@ -43,7 +43,7 @@ fetch(url)
                 let option;
                 for (let i = 0; i < theData.length; i++) {
                     option = document.createElement('option');
-                    option.text = theData[i].name;
+                    option.text = theData[i].name; //difference between text and innerHTML ?
                     option.value = theData[i].username;
                     dropdown.add(option);
                 }
