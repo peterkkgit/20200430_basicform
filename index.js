@@ -40,6 +40,7 @@ fetch(url)
 */
         response.json().
             then(theData => {
+                console.log(theData);
                 let option;
                 for (let i = 0; i < theData.length; i++) {
                     option = document.createElement('option');
