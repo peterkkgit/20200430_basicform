@@ -9,7 +9,7 @@ body {
 
 #container {
 
-    margin: 100px;
+    margin: 50px;
     line-height: 2.2em;
     font-size: 1.2em;
 }
@@ -17,7 +17,9 @@ body {
 h1 {
     font-weight: 900;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 0px;
+    padding-top: 100px;
+    clear: both;
 }
 
 label {
@@ -51,7 +53,7 @@ input[type="submit"], button[type="button"] {
 select {
     font-weight: bolder;
     font-size: 1em;
-    margin: .8em;
+    margin: 0.8em 0.8em 0.8em 0.8em;
     padding: 0.8em;
     border-radius: 10px;
     background-color: palegoldenrod;

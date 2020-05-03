@@ -20,6 +20,8 @@ function theFetch() {
 
 
 
+
+// Creating a Dropdown List of Names from JSON online - https://jsonplaceholder.typicode.com/users
 let dropdown = document.getElementById("fetchNameDropdownID");
 dropdown.length = 0;
 
@@ -33,18 +35,17 @@ const url = 'https://jsonplaceholder.typicode.com/users';
 
 fetch(url)
     .then(response => {
-/*        if (response.status !== 200) {
+        if (response.status !== 200) {
             console.warn('Oops. Status Code: ' + response.status); // could use error() instead?
             return; // do I need return here even if already console.warn?
         }
-*/
         response.json().
             then(theData => {
                 console.log(theData);
                 let option;
                 for (let i = 0; i < theData.length; i++) {
                     option = document.createElement('option');
-                    option.text = theData[i].name; //difference between text and innerHTML ?
+                    option.text = theData[i].name; // why text and not innerHTML ?
                     option.value = theData[i].username;
                     dropdown.add(option);
                 }
