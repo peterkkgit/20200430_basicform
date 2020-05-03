@@ -8,31 +8,46 @@
 <body>
     <div id="container">
         <h1>Room Booking</h1>
-        <form id="mainForm" action="https://example.com/book" method="POST">
+        <form id="mainForm" method="POST" action="https://jsonplaceholder.typicode.com/posts">
+            <!--how to POST without changing page? -->
             <div id="formTop">
                 <label>Who</label>
-                <input name="whoInput" type="text" placeholder="enter your name" minlength="3" required> <br>
+                <input name="whoInput" type="text" placeholder="enter your name" minlength="3"> <br>
                 <label>What</label>
-                <input name="whatInput" type="text" placeholder="enter room name" minlength="3" required> <br>
+                <input name="whatInput" type="text" placeholder="enter room name" minlength="3"> <br>
                 <label>When</label>
-                <input name="whenInput" type="text" placeholder="date and time" minlength="3" required><br>
+                <input name="whenInput" type="text" placeholder="date and time" minlength="3"> <br>
                 <label>Duration</label>
-                <input name="durationInpupt" type="text" placeholder="enter desired booking length" minlength="3"
-                    required>
-                <hr>
+                <input name="durationInpupt" type="text" placeholder="enter desired booking length" minlength="3">
             </div>
-
-            <div id="formBottom">
+            <div id="formMiddle">
                 <label>Meeting Name</label>
-                <input name="meetingNameInput" type="text" placeholder="enter desired booking length" minlength="3"
-                    required> <br>
+                <input name="meetingNameInput" type="text" placeholder="enter desired booking length" minlength="3">
+                <br>
                 <label>Description</label>
                 <input name="descriptionInput" type="text" placeholder="(optional) add a description for your booking"
                     minlength="3" maxlength="40">
             </div>
-            <input type="submit" value="SUBMIT">
+            <input id="postButton" type="submit" value="POST">
         </form>
+
+        <form id="fetchForm" method="POST" action="javascript: theFetch()">
+            <!--    action="https://jsonplaceholder.typicode.com/users"        "-->
+            <div id="formBottom">
+                <select value="username" id="fetchNameDropdownID" name="nameDropdownName"></select> <br>
+                <!--input id="fetchName" type="text" placeholder="enter username to search here"> <br-->
+                <input id="fetchKey" type="text" placeholder="enter key to search within the above name here. Try id, username or email . . . "> <br>
+                <input type="submit" value="SHOW FETCHED VALUES" onclick="theFetch()">
+            </div>
+        </form>
+        <div id="outputs">
+            <p id="postFeedback"></p>
+            <p id="fetchFeedback"></p>
+            <p id="submitResponse"></p>
+        </div>
     </div>
 
-    <script src="index.js"></script>
+    <script src="index.js">
+
+    </script>
 </body>

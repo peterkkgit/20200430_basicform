@@ -9,7 +9,7 @@ body {
 
 #container {
 
-    margin: 300px 300px;
+    margin: 100px;
     line-height: 2.2em;
     font-size: 1.2em;
 }
@@ -25,9 +25,10 @@ label {
     display: inline-block;
     width: 30%;
     text-align: right;
+
 }
 
-input {
+input, button, select {
     float: right;
     clear: right;
     border: 3px outset black;
@@ -36,16 +37,41 @@ input {
     padding: 0.3em;
 }
 
-input[type="submit"] {
+input[type="submit"], button[type="button"] {
     font-weight: bolder;
     font-size: 1em;
-    margin-top: .8em;
+    margin: .8em;
     padding: 0.8em;
     border-radius: 10px;
+    border: 6px outset black;
     background-color: darkgrey;
     width: unset;
 }
 
+select {
+    font-weight: bolder;
+    font-size: 1em;
+    margin: .8em;
+    padding: 0.8em;
+    border-radius: 10px;
+    background-color: palegoldenrod;
+    width: unset;
+}
+
+
 input[name="descriptionInput"] {
     height: 100px;
+}
+
+#outputs {
+    float: right;
+    clear: both;
+    line-height: 1em;
+    text-align: right;
+    padding-right: 0.3em;
+}
+
+#fetchFeedback {
+    font-weight: bolder;
+    text-decoration: underline;
 }
